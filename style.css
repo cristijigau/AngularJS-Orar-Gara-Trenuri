@@ -1,0 +1,361 @@
+	*{
+		box-sizing: border-box;
+		padding: 0;
+		margin: 0;
+		}
+		html, body{
+		height: 100vh;
+		margin: 0;
+		padding: 0;
+		font-family: 'Roboto';
+		}
+		ol,ul {
+    		list-style:none;
+    	}
+		.container{
+			width: 100%;
+			min-height: 100vh;
+			background-color: #B2B5B6;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.header{
+			min-height: 10vh;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.main-section{
+			width: 100%;
+			min-height: 80vh;
+			display: flex;
+			justify-content: center;
+		}
+		.pages{
+			min-height: 80%;
+			background-color: white;
+			width: 80%;
+		}
+		.side-left{
+			width: 10%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.side-right{
+			width: 10%;
+		}
+		.main-section h4{
+			text-align: center;
+			font-family: 'Sansita Swashed';
+			font-size: 1.2em;
+			margin:5px 0 10px 0;
+		}
+		.footer{
+			min-height: 10vh;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.logo{
+			width: 10%;
+		}
+		.menu{
+			width: 80%;
+			display: flex;
+			align-items: center;
+			font-family: 'Sansita Swashed';
+		}
+		.menu ul{
+			flex:1;
+			height: 70%;
+			display: flex;
+			flex-direction: row;
+		}
+		.menu .first{
+			flex:1;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-content: center;
+		}
+		.menu .last{
+			flex:1;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-content: center;
+		}
+		.menu .middle{
+			flex:1;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.middle span{
+			width: 90px;
+			color: white;
+			padding: 5px 0 5px 0;
+		}
+		.menu .first li, .menu .last li{
+			margin: 5px;
+			cursor: pointer;
+			border: 2px solid #ACBED8;
+			border-radius: 2px;
+			background: #ACBED8;
+			padding: 10px;
+			color: white;
+			transition: background 0.5s;
+		}
+		.menu .first li:hover, .menu .last li:hover{
+			background: #E8EBF7;
+			color: #AEB9BF;
+		}
+		ul.acasa .first .acasa,
+		ul.anunturi .first .anunturi,
+		ul.bilete .first .bilete,
+		ul.contacte .first .contacte{
+			background-color:#D78521;
+			border-color: #D78521;
+		}
+
+	.modal-container{
+		position: fixed;
+		background: rgba(0, 0, 0, 0.7);
+		width: 100vw;
+		height: 100vh;
+		z-index: 100;
+		display: flex;
+	}
+	.modal-message-container{
+		background-color: white;
+		width: 50vw;
+		height: 50vh;
+		margin: auto;
+		opacity: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	.modal-message-header{
+	  	background-color: #EDEDED;
+	  	flex:1;
+	  	text-align: center;
+	  	color: #41403F;
+	}
+	.modal-message-header h1{
+		margin-top: 0.5em;
+		font-family: Roboto;
+	}
+	.modal-message-content{
+		background-color: white;
+		flex:3;
+		padding: 2em;
+		font-family: Roboto;
+	}
+	.modal-message-footer{
+		background-color: white;
+		flex:1;
+	}
+	.modal-close-btn{
+		flex:none;
+		position: absolute;
+		top: 4em;
+		right: 12em;
+		background-color: transparent;
+  		border: none;
+  		color: white;
+  		padding: 12px 16px;
+  		font-size: 26px;
+  		cursor: pointer;
+	}
+	.modal-close-btn i:hover{
+		color: #FF6733;
+	}
+	.modal-message-content form{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.modal-message-content form input, .modal-message-content form button {
+		width: 50%;
+		padding: 2%;
+	}
+	.logo{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		color: white;
+		cursor: pointer;
+	}
+	.logo-image{
+		margin-top: 20%;
+		width: 90%;
+		height: auto;
+	}
+	.ending{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 10%;
+		color: white;
+	}
+	.ending .status{
+		border: 1px solid white;
+		padding: 5%;
+	}
+	.orar table {
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	.orar th, .orar td {
+	  text-align: left;
+	  padding: 8px;
+	  word-wrap:break-word;
+	}
+
+	.orar tr:nth-child(even){background-color: #E8EBF7}
+
+	.orar th {
+	  background-color: #ACBED8;
+	  color: white;
+	  cursor: pointer;
+	}
+	.anunt table {
+	  border-collapse: collapse;
+	  width: 100%;
+	  list-style-type: none;
+	}
+
+	.anunt th, .anunt td {
+	  text-align: left;
+	  padding: 8px;
+	  word-wrap:break-word;
+	}
+	.anunt tr{background-color: #ACBED8}
+	.anunt tr:nth-child(even){background-color: #E8EBF7}
+
+	.anunt th {
+	  background-color: #ACBED8;
+	  color: white;
+	  cursor: pointer;
+	}
+	.filtru{
+		margin:5px 0 10px 0;
+	}
+	.filtru th{
+		background-color: #D78521;
+	}
+	.filtru input{
+		width: 100%;
+		padding: 2%;
+	}
+	.pagina-bilete{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.pagina-bilete h4{
+		margin:0;
+	}
+	.constructor-bilet{
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+	.rezultat-bilet{
+		width: 50%;
+	}
+	.creaza-sus{
+		flex: 1;
+		background: #F2D398;
+	}
+	.creaza-jos{
+		flex: 1;
+		background: #F2D398;
+	}
+	.tabel-bilet table, .tabel-bilet th, .tabel-bilet td {
+  		border: 1px solid black;
+	}
+	.tabel-bilet table{
+		width: 100%;
+		background: #E8EBF7;
+	}
+	.tabel-bilet tr{
+		display: flex;
+		flex-direction: row;
+	}
+	.tabel-bilet td{
+		flex:1;
+		display: flex;
+		justify-content: space-between;
+		height: 2em;
+	}
+	.tabel-bilet input, .tabel-bilet select{
+		flex: 1;
+		padding: 2px;
+		margin-left: 5px;
+	}
+	.tabel-bilet button{
+		width: 10em;
+		background: #ACBED8;
+		border: none;
+	}
+	.tabel-bilet button:hover{
+		background: #D78521;
+	}
+	.celula-anunt{
+		background: #ACBED8;
+		border: 1px solid white;
+	}
+	.linie-anunt span{
+		margin-left: 1em;
+		cursor: pointer;
+		color: #DE1A1A;
+	}
+	.adauga select, .adauga button{
+		width: 100%;
+		height: 2em;
+	}
+	.adauga button{
+		background: #ACBED8;
+		border: none;
+	}
+	.adauga button:hover{
+		background: #D78521;
+	}
+	.pagina-contacte{
+		background: #F2D398;
+		height: 100%;
+	}
+	.pagina-contacte h4{
+		margin: 0;
+	}
+	.contacte-container{
+		background: #F2D398;
+		display: flex;
+	}
+	.foaie-titlu{
+		flex:1;
+	}
+	.elemente{
+		flex:1;
+		background: #E8EBF7;
+		height: 80vh;
+	}
+	.err{
+		color: red;
+	}
+	.schimbat{
+		background: #97F1A1;
+	}
